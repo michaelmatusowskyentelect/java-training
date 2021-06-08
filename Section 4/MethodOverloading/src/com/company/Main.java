@@ -7,7 +7,7 @@ public class Main {
         System.out.println("New score is " + newScore);
         calculateScore(75);
         calculateScore();
-        System.out.println(calcFeetAndInchesToCentimeters(6d));
+        System.out.println(calcFeetAndInchesToCentimeters(157d));
     }
 
     public static int calculateScore(String playerName, int score) {
@@ -39,6 +39,7 @@ public class Main {
         }
         double feet = (inches-inches%12)/12.0;
         inches = inches%12;
+        System.out.println(feet + " feet, " + inches + " inches = " + calcFeetAndInchesToCentimeters(feet, inches) + " cm");
         return calcFeetAndInchesToCentimeters(feet, inches);
     }
 }
