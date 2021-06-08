@@ -17,19 +17,19 @@ public class Main {
 
         if (hours < 10) {
             time = time + "0" + hours + "h ";
-        }else{
+        } else {
             time = time + hours + "h ";
         }
 
         if (minutes < 10) {
             time = time + "0" + minutes + "m ";
-        }else{
+        } else {
             time = time + minutes + "m ";
         }
 
         if (seconds < 10) {
             time = time + "0" + seconds + "s";
-        }else {
+        } else {
             time = time + seconds + "s";
         }
         return time;
